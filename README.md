@@ -110,4 +110,6 @@ If any of the uids or the key is not correct the request will fail with the foll
 ```
 ## Receiving automated feedback from our staff
 
+One field in the body while creating a transprt task has a specific functionality. It is the **contacts** field. Not only that it defines who are the contacts for the task it also defines who will be informed if the request is rejected from our staff.
+
 
