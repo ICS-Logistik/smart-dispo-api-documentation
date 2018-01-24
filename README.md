@@ -10,17 +10,15 @@ Every action we take is just a request in the Smart-Dispo system that will be st
 
 ### URL
 
-All actions can be accomplished by calling a simple [POST](https://en.wikipedia.org/wiki/POST_(HTTP)) call to a specific URL. The URL has 5 parts:
-* project domain with destination path (https://smart-dispo.firebaseio.com/container_task_api/)
+All actions can be accomplished by calling a simple [POST](https://en.wikipedia.org/wiki/POST_(HTTP)) call to a specific URL. The URL has 3 parts:
+* project domain with destination path (https://www.smart-dispo.com/api/v1/container_tasks)
 * terminal uid (for example **-KtoyVRMC6H-iXMueBBo**)
-* customer uid (for example **-L-exdQpHII42HpYvD3q**)
 * customer key (for example **4e543e62-0557-436c-bd78-0fc4af87708b**). This one is not valid but should demonstrate how a key looks like.
-* and on the end the **.json**
 
 When we take all this parts together our URL would look like this:
 
 ```json
-https://smart-dispo.firebaseio.com/container_task_api/-KtoyVRMC6H-iXMueBBo/-L-exdQpHII42HpYvD3q/4e543e62-0557-436c-bd78-0fc4af87708b.json
+https://www.smart-dispo.com/api/v1/container_tasks?terminal=-KtoyVRMC6H-iXMueBBo&key=-L-exdQpHII42HpYvD3q/4e543e62-0557-436c-bd78-0fc4af87708b
 ````
 
 As customer and partner of us you will be provided with the required informations (the uids and the key) above. 
@@ -81,7 +79,6 @@ For example if we would like to change the `date` of our task above wou would ca
 
 ```json
 {
-    "uid": "-L3bC8ugQ1ULEA_YxCo3",
     "date": "2018-02-17"
 }
 ```
@@ -94,7 +91,6 @@ A cancelation requiest Body for our task above would look like this:
 
 ```json
 {
-    "uid": "-L3bC8ugQ1ULEA_YxCo3",
     "cancel": "true"
 }
 ```
