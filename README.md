@@ -66,6 +66,8 @@ After our URL is prepared we can work on the data we want to send. The data can 
 }
 ```
 
+[Here](https://github.com/ICS-Logistik/smart-dispo-api-documentation/blob/master/Fields.md) a complete list of all possible fields and their explanation.
+
 If we wan't to change data in an existing task we would provide just the data we wan't to change for example if we would like to change the date in a task the Body would look like this:
 
 ```json
