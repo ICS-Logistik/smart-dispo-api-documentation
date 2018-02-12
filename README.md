@@ -127,4 +127,23 @@ If we try to make a request with an invalid `key` we will receive a response wit
 
 One field in the body while creating a transprt task has a specific functionality. It is the **contacts** field. Not only that it defines who are the contacts for the task it also defines who will be informed if the request is rejected from our staff. This field can also be updated afterwards to add or remove contacts.
 
+Every contact will be also informed if the import, change or cancelation request is not accepted by our staff! Because of that we recommend to have at least one contact.
+
+## Examples
+
+This project has a `Examples` folder. In that we have seperated code examples for the `POST`, `PUT` and `DELETE` requests in **7** of the most used programming languages.
+
+The examples are writen for our development environment witch means that the `URL` has a different domain. The production domain is `https://www.smart-dispo.com` and the development domain `https://smart-dispo-dev.firebaseapp.com`. Don't forget to change this in your code. 
+
+The reaoson we are using the development server in the examples is that it allows you to test your code with our test environment. All the Examples should work and you should receive successful responses on them. Feel free to play with the examples and to run the example code in your projects.
+
+## Contact and support
+
+For any kind of questions or support pleas contact me via E-Mail or office phone.
+
+E-Mail: **tarik.huber@ics-logistik.com**
+Office phone: **0049 8654 46 97 66**
+
+
+
 
