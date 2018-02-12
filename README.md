@@ -48,7 +48,7 @@ After our URL is prepared we can work on the data we want to send. The data can 
     "conSize": "1/40",
     "refNr": "4687864",
     "date": "2018-02-15",
-    "time": "2018-02-02T18:15:24",
+    "time": "2018-02-15T18:15:24",
     "description": "test1",
     "isImport": true,
     "retNr": "retNr",
