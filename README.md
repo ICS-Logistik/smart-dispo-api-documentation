@@ -137,6 +137,8 @@ The examples are writen for our development environment witch means that the `UR
 
 The reaoson we are using the development server in the examples is that it allows you to test your code with our test environment. All the Examples should work and you should receive successful responses on them. Feel free to play with the examples and to run the example code in your projects.
 
+If you want to test the HTTP request manually I would recomment o use [Postamn](https://www.getpostman.com/) for that.
+
 ## Contact and support
 
 For any kind of questions or support pleas contact me via E-Mail or office phone.
