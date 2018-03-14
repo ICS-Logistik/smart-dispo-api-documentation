@@ -34,7 +34,7 @@ https://www.smart-dispo.com/api/v1/container_tasks?terminal=-KtoyVRMC6H-iXMueBBo
 
 and like this for `PUT` or `DELETE` calls:
 ```json
-https://smart-dispo-dev.firebaseapp.com/api/v1/container_tasks?terminal=-Ku3IJfkqvagswb450WZ&key=8534c5b8-1bca-4b0f-addc-119a54893618&uid=-L3cak9pl6Pm8c0mpSA7
+https://smart-dispo.com/api/v1/container_tasks?terminal=-Ku3IJfkqvagswb450WZ&key=8534c5b8-1bca-4b0f-addc-119a54893618&uid=-L3cak9pl6Pm8c0mpSA7
 ```
 
 
@@ -104,7 +104,7 @@ It is also just a `json` body with the uid (**-L586Gz-nW0phDYGivQr**) of your tr
 To change a transport task we add to the URL another parameter called **uid** and to the Body just those fields we want to change with the new values. It is importand to change the `HTTP method` to **PUT**! For example if we would like to change the `date` of our task above you would call this URL:
 
 ```json
-https://smart-dispo-dev.firebaseapp.com/api/v1/container_tasks?terminal=-Ku3IJfkqvagswb450WZ&key=8534c5b8-1bca-4b0f-addc-119a54893618&uid=-L586Gz-nW0phDYGivQr
+https://smart-dispo.com/api/v1/container_tasks?terminal=-Ku3IJfkqvagswb450WZ&key=8534c5b8-1bca-4b0f-addc-119a54893618&uid=-L586Gz-nW0phDYGivQr
 ```
 
 with this body:
