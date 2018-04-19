@@ -115,6 +115,20 @@ with this body:
 }
 ```
 
+## Reading transport task data
+
+To get data about a task from the API we use the same url and parameters as we did in the updating part above and just change the call from **PUT** to **GET**. That is also a reason the save the task `uid` on the firts **POST**, because we need it for every other call afterwards. Watchng out example the `URL` would be the same:
+
+```json
+https://smart-dispo.com/api/v1/container_tasks?terminal=-Ku3IJfkqvagswb450WZ&key=8534c5b8-1bca-4b0f-addc-119a54893618&uid=-L586Gz-nW0phDYGivQr
+```
+
+Because we are reading the data from our API the `Body` is not needed in the request and even if you would have one it will be ignored. 
+We insted receive as response a large `json` file with 3 main parts:
+* **data** - the main data of the transport task
+* **statuses** - the workflow statuses of the driver/drivers working on the task in a chronological order and with the locations where they are triggered
+* **files** - all task related files witch you as customer are allowed to see with the OCR Text recognised in it and a download link
+
 ## Cancelation of a tasks
 
 Similar to changes for canceling a task we need to povide the **uid** in our URL but for a cancelation we don't need any data in the task so we call it with an empty body. It is importand to change the `HTTP method` to **DELETE**!
