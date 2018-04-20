@@ -56,13 +56,25 @@ After our URL is prepared we can work on the data we want to send. The data can 
     "contacts": [
     	{"email":"tarik.huber@ics-logistik.com"}
     	],
-    "address":{
-    	"company": "ICS Container-Transport GmbH",
-    	"street": "Breslauerstr 49",
-    	"zip": "83395",
-    	"country": "DE",
-    	"place": "Freilassing"
-    }
+    "addresses": [
+        { 
+        	"company":"Google", 
+        	"street":"Erika-Mann-Straße 33", 
+        	"zip":"80636", 
+        	"country":"DE", 
+        	"place":"München" 
+        	
+        },
+        { 
+        	"company":"ICS Logistik & Transport GmbH", 
+        	"street":"Breslauerstr 49", 
+        	"zip":"83395", 
+        	"country":"DE", 
+        	"place":"Freilassing",
+        	"comment":"Give it to Tarik"
+        	
+        }
+    ]
 }
 ```
 
@@ -82,10 +94,8 @@ When we have our URL and Body we are ready to send new transport tasks to the Sm
 ## Importing transport tasks
 
 The `json` example above is already everything we need to create a new transport task. It is important to know that most of the fields are optional. There are just 3 of them that are required:
-* **isImport**
 * **date**
-* **address**
-
+* **addresses**
 
 If the `POST` call with the URL and Body is accepted you should receive a response with a body like this one:
 
