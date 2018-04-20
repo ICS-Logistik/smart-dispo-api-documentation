@@ -16,5 +16,5 @@
 * **heavy** - (boolean) defines if transport is heavier than normal transports
 * **isRefrigerated** - (boolean) defines if the goods are refrigerated
 * **contacts** - (array) array of contacts with fields `email` and `name`
-* **address** - (json object) json object with the target address that has teh fields `company`, `street`, `zip`, `country`, `place`
+* **addresses** - (array) array of all task addresses witch have the fields `company`, `street`, `zip`, `country`, `place`, `comment`
 
