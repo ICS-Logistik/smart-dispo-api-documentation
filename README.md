@@ -127,7 +127,7 @@ with this body:
 
 ## Reading transport task data
 
-To get data about a task from the API we use the same url and parameters as we did in the updating part above and just change the call from **PUT** to **GET**. That is also a reason the save the task `uid` on the firts **POST**, because we need it for every other call afterwards. Watchng out example the `URL` would be the same:
+To get data about a task from the API we use the same url and parameters as we did in the updating part above and just change the call from **PUT** to **GET**. The `terminal` parameter is also not required. That is also a reason the save the task `uid` on the firts **POST**, because we need it for every other call afterwards. Watchng out example the `URL` would be the same:
 
 ```json
 https://smart-dispo.com/api/v1/container_tasks?terminal=-Ku3IJfkqvagswb450WZ&key=8534c5b8-1bca-4b0f-addc-119a54893618&uid=-L586Gz-nW0phDYGivQr
