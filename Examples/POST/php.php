@@ -30,13 +30,25 @@ $request->setBody('{
       	"email":"tarik.huber@ics-logistik.com"
       }
       ],
-    "address":{
-      "company": "ICS Logistik & Transport GmbH",
-      "street": "Sudetenplatz 5",
-      "zip": "83395",
-      "country": "DE",
-      "place": "Freilassing"
-    }
+      "addresses": [
+        { 
+        	"company":"Google", 
+        	"street":"Erika-Mann-Straße 33", 
+        	"zip":"80636", 
+        	"country":"DE", 
+        	"place":"München" 
+        	
+        },
+        { 
+        	"company":"ICS Logistik & Transport GmbH", 
+        	"street":"Breslauerstr 49", 
+        	"zip":"83395", 
+        	"country":"DE", 
+        	"place":"Freilassing",
+        	"comment":"Give it to Tarik"
+        	
+        }
+    ]
 }');
 
 try {
